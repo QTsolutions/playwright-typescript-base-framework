@@ -2,7 +2,4 @@ node_modules/
 /test-results/
 /playwright-report/
 /playwright/.cache/
-tests/
-fixture/
-uploaditems/
-Lambdainfo.txt/
+/jsonReports/
