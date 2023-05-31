@@ -28,9 +28,9 @@ test.describe("page object test demo", async () => {
         await page.goto(`${baseURL}route=account/login`)
         await loginPage.login(data.email, data.password)
         await homePage.hoverOnMegaMenu();
-        await homePage.clickOnHeadPhones();
-        await megaMenu.addFirstProductToTheCart();
-        const isCartVisible = await megaMenu.isToastVisible();
-        expect(isCartVisible).toBeVisible();
+        await homePage.clickOnApple(); 
+        await megaMenu.clickonproduct();
+        expect(await megaMenu.isipodshufflevisible()).toBeVisible
+        await megaMenu.clickOnAddToCartButton()
     })
 })

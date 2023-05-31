@@ -1,0 +1,122 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/PREKSHA/playwright-typescript-base-framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/PREKSHA/playwright-typescript-base-framework",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "configFile": "C:\\Users\\PREKSHA\\playwright-typescript-base-framework\\playwright.config.ts",
+    "rootDir": "C:/Users/PREKSHA/playwright-typescript-base-framework",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.32.3",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "pomtest\\addToCart.test.ts",
+      "file": "pomtest/addToCart.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "page object test demo",
+          "file": "pomtest/addToCart.test.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login Test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8239,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-05-31T15:32:21.199Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PREKSHA\\playwright-typescript-base-framework\\test-results\\pomtest-addToCart-page-object-test-demo-Login-Test\\video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PREKSHA\\playwright-typescript-base-framework\\test-results\\pomtest-addToCart-page-object-test-demo-Login-Test\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c188a18f2ecab048a02-1020edd092072654152d",
+              "file": "pomtest/addToCart.test.ts",
+              "line": 18,
+              "column": 10
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

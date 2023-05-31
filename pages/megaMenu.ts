@@ -1,23 +1,32 @@
-import { Page } from "@playwright/test";
+import { Locator, Page } from "@playwright/test";
 
 export default class MegaMenu {
 
-    constructor(public page: Page) { }
+    readonly click__on_product: Locator;
+    readonly add_to_cart_button: Locator;
+    readonly ipodshiffle_visible: Locator
 
-    //click on first product 
-    async addFirstProductToTheCart() {
-        await this.page.hover("//div[@class='image']/a", {
-            strict: false
-        });
-        await this.page.locator("(//button[@title='Add to Cart'])")
-            .nth(0).click();
-        this.page.waitForTimeout(5000);
+    constructor(public page: Page) {
+        this.page = page;
+        this.click__on_product = page.locator("(//img[@class='lazy-load'])")
+        this.add_to_cart_button = page.locator("(//button[contains(@class,'text btn')])[2]")
+        this.ipodshiffle_visible = page.locator("//h1[text()='iPod Shuffle']")
     }
 
-    //view cart toast is visible
-    async isToastVisible() {
-        const toast = this.page.locator("//a[contains(.,'View Cart')]");
+    //clcik on the product 
+    async clickonproduct() {
+        await this.click__on_product.nth(3).click()
+    }
+
+    //text is visible of the ipod
+    async isipodshufflevisible() {
+        const toast = this.ipodshiffle_visible;
         await toast.waitFor({ state: "visible" })
         return toast;
+    }
+
+    //click on the addtocart buuton
+    async clickOnAddToCartButton() {
+        await this.add_to_cart_button.click()
     }
 }
