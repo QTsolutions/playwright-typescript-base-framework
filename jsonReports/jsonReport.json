@@ -12,12 +12,12 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "c:/Users/PREKSHA/Desktop/learn-playwright/test-results",
+        "outputDir": "C:/Users/PREKSHA/playwright-typescript-base-framework/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "c:/Users/PREKSHA/Desktop/learn-playwright",
+        "testDir": "C:/Users/PREKSHA/playwright-typescript-base-framework",
         "testIgnore": [],
         "testMatch": [
           "**/?(*.)@(spec|test).*"
@@ -47,8 +47,8 @@
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "c:\\Users\\PREKSHA\\Desktop\\learn-playwright\\playwright.config.ts",
-    "rootDir": "c:/Users/PREKSHA/Desktop/learn-playwright",
+    "configFile": "C:\\Users\\PREKSHA\\playwright-typescript-base-framework\\playwright.config.ts",
+    "rootDir": "C:/Users/PREKSHA/playwright-typescript-base-framework",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -58,14 +58,14 @@
   },
   "suites": [
     {
-      "title": "tests\\login.test.ts",
-      "file": "tests/login.test.ts",
+      "title": "fixture\\fixture.test.ts",
+      "file": "fixture/fixture.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Login test demo",
-          "ok": false,
+          "title": "fixture demo",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -77,36 +77,173 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30010,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
+                  "status": "passed",
+                  "duration": 17,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      "text": "\u001b[33m22\u001b[39m preksha.vora11@gmail.com\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-04-28T12:43:08.812Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "c:\\Users\\PREKSHA\\Desktop\\learn-playwright\\test-results\\tests-login-Login-test-demo\\test-failed-1.png"
-                    }
-                  ]
+                  "startTime": "2023-05-31T08:09:59.788Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "ef85df6096d4739f2c52-456802a5df7135291af1",
-          "file": "tests/login.test.ts",
+          "id": "df03b2918d9969d3f6d9-385a095e4c4724aa5425",
+          "file": "fixture/fixture.test.ts",
           "line": 3,
           "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pomtest\\addToCart.test.ts",
+      "file": "pomtest/addToCart.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "page object test demo",
+          "file": "pomtest/addToCart.test.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Register test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 9414,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-05-31T08:09:59.800Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PREKSHA\\playwright-typescript-base-framework\\test-results\\pomtest-addToCart-page-object-test-demo-Register-test\\video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PREKSHA\\playwright-typescript-base-framework\\test-results\\pomtest-addToCart-page-object-test-demo-Register-test\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c188a18f2ecab048a02-ac5832767d724fd2da94",
+              "file": "pomtest/addToCart.test.ts",
+              "line": 8,
+              "column": 9
+            },
+            {
+              "title": "Login Test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 7300,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-05-31T08:10:10.110Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PREKSHA\\playwright-typescript-base-framework\\test-results\\pomtest-addToCart-page-object-test-demo-Login-Test\\video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PREKSHA\\playwright-typescript-base-framework\\test-results\\pomtest-addToCart-page-object-test-demo-Login-Test\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c188a18f2ecab048a02-1020edd092072654152d",
+              "file": "pomtest/addToCart.test.ts",
+              "line": 22,
+              "column": 9
+            },
+            {
+              "title": "Add To Cart",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 13736,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-05-31T08:10:17.412Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PREKSHA\\playwright-typescript-base-framework\\test-results\\pomtest-addToCart-page-object-test-demo-Add-To-Cart\\video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PREKSHA\\playwright-typescript-base-framework\\test-results\\pomtest-addToCart-page-object-test-demo-Add-To-Cart\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c188a18f2ecab048a02-133c7c3920c492daf1b1",
+              "file": "pomtest/addToCart.test.ts",
+              "line": 32,
+              "column": 9
+            }
+          ]
         }
       ]
     }
