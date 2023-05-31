@@ -21,6 +21,9 @@
 ## Test-data
 `contains all the data`
 
+## Playwrightconfig
+`contains URL reporter Screenshot methods`
+
 ## Base
 `contains fixture of all the pages`
 
